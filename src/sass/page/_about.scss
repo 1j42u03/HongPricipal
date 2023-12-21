@@ -1,0 +1,162 @@
+body {
+  header {
+    .nav_aboutMe {
+      .button {
+        .aboutMe {
+          background-color: white;
+          border-radius: 4px;
+          cursor: pointer;
+
+          a {
+            color: #2A6B8A;
+          }
+        }
+
+        .aboutMe:hover,
+        .scoutArea:hover,
+        .bookArea:hover {
+          @extend.aboutMe;
+        }
+
+      }
+    }
+  }
+
+  .main_aboutMe {
+
+    ul.basicInfo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      list-style: none;
+      padding: 0 40px;
+      margin: 40px 0;
+
+      li.basicInfoImg {
+        display: block;
+        border: 1px solid green;
+        margin: 16px;
+        padding: 4px;
+
+        img {
+          width: 100%;
+        }
+
+        div {
+          margin: 4px 0;
+        }
+
+        span {
+          font-weight: bolder;
+          font-size: 18px;
+
+          a {
+            text-decoration: none;
+            color: #2A6B8A;
+          }
+        }
+      }
+
+      li.basicInfoDetail {
+        margin: 16px;
+
+        .titleName {
+
+          h1 {
+            margin: 0;
+            font-weight: bolder;
+          }
+
+
+        }
+
+        .education,
+        .experience {
+          h3 {
+            background-color: #2A6B8A;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+          }
+
+          ul {
+
+            list-style: none;
+            padding: 0;
+
+            li {
+              margin: 4px;
+            }
+          }
+
+          ul.ul_experience {
+            height: 260px;
+            overflow-y: auto;
+          }
+
+        }
+
+      }
+
+      li.autobiography_text {
+        margin-top: 10px;
+
+        h3 {
+          background-color: #2A6B8A;
+          color: white;
+          padding: 4px 8px;
+          border-radius: 4px;
+        }
+
+        .autobiography_textinside {
+          height: 560px;
+          overflow-y: auto;
+        }
+
+        p {
+          margin: 0;
+          padding: 4px 8px;
+          text-indent: 2em;
+        }
+      }
+
+      li.autobiography_pic {
+        height: 600px;
+
+
+
+        div {
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20%;
+
+          img {
+            width: 60%;
+            font-size: 0;
+
+          }
+
+        }
+      }
+    }
+
+    .eduIdea {
+      padding: 0 40px;
+
+      h3 {
+        background-color: #2A6B8A;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 4px;
+      }
+
+      p {
+        margin: 0;
+        padding: 4px 8px;
+        text-indent: 2em;
+      }
+    }
+
+  }
+}

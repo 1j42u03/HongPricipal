@@ -1,0 +1,88 @@
+header {
+  .nav_bookArea {
+    .button {
+      .bookArea {
+        background-color: white;
+        border-radius: 4px;
+        cursor: pointer;
+
+
+        a {
+          color: #2A6B8A;
+        }
+      }
+
+      .aboutMe:hover,
+      .scoutArea:hover,
+      .bookArea:hover {
+        @extend.bookArea;
+      }
+
+    }
+  }
+}
+
+.main_bookArea {
+
+  .publications {
+
+    .accordion {
+      padding: 0 40px;
+
+      h3.title {
+        display: flex;
+        justify-content: space-between;
+        background-color: #2A6B8A;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 4px;
+        cursor: pointer;
+
+        span {
+          margin: 0 8px;
+        }
+      }
+
+      ul.panel {
+        display: none;
+
+      }
+
+      ul.panel.open {
+        padding: 0;
+        display: block;
+        list-style: none;
+
+        li {
+          margin: 16px;
+
+
+          .time {
+            border-bottom: 2px solid lightblue;
+            font-weight: bolder;
+            margin-bottom: 4px;
+            color: #2A6B8A;
+          }
+
+          .bookContent {
+            text-indent: -3.2em;
+            padding-left: 52px;
+
+            .mark {
+              text-indent: 0em;
+            }
+
+          }
+
+        }
+      }
+
+
+    }
+
+
+
+  }
+
+
+}

@@ -1,0 +1,220 @@
+header {
+  .nav_scoutArea {
+    .button {
+      .scoutArea {
+        background-color: white;
+        border-radius: 4px;
+        cursor: pointer;
+
+
+        a {
+          color: #2A6B8A;
+        }
+      }
+
+      .aboutMe:hover,
+      .scoutArea:hover,
+      .bookArea:hover {
+        @extend.scoutArea;
+      }
+
+    }
+  }
+}
+
+.main_scoutArea {
+  .theme {
+    padding: 0 40px;
+
+    h3.title {
+      display: flex;
+      justify-content: space-between;
+      background-color: #2A6B8A;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+
+    }
+
+    .themeBlock {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+
+
+      .cub {
+        padding: 0;
+        margin: 0;
+
+        h4 {
+          margin: 8px;
+          padding: 8px;
+          color: #2A6B8A;
+          border-bottom: 2px solid lightblue;
+        }
+
+        h4.song {
+          display: flex;
+          justify-content: space-between;
+
+          .more {
+            background-color: #2A6B8A;
+            line-height: 1;
+            border-radius: 8px;
+            padding-top: 2px;
+
+
+            a {
+              color: white;
+              text-decoration: none;
+              padding: 8px;
+            }
+
+          }
+
+          .more:hover {
+            background-color: #AFCB7E;
+
+          }
+
+        }
+
+        ol.part {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          max-height: 560px;
+          overflow-y: auto;
+          padding: 0;
+
+
+          li {
+            margin: 12px;
+            cursor: pointer;
+            list-style: none;
+
+            a {
+              text-decoration: none;
+              color: black;
+              padding: 8px;
+
+              &:hover {
+                color: #2A6B8A;
+                border-bottom: 0.2px solid #2A6B8A;
+              }
+
+            }
+
+
+          }
+
+          li.openModal {
+            div.modal {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0, 0, 0, 0.3);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              div.fable {
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                h4.modalTitle {
+                  background-color: #2A6B8A;
+                  color: white;
+                  height: 40px;
+                  margin: 0;
+
+                  display: flex;
+                  justify-content: space-between;
+
+                  .close {
+                    font-size: 24px;
+                    cursor: pointer;
+                    line-height: 1;
+                    ;
+
+                  }
+                }
+
+                ol.modalContent {
+                  overflow-y: auto;
+                  max-height: 500px;
+
+                  padding: 20px;
+
+                  li {
+
+                    border-top: 1px dashed #2A6B8A;
+
+                    &:first-child {
+                      border-top: none;
+                    }
+
+                    p.number {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    }
+
+                    p {
+                      margin: 16px;
+                    }
+
+                  }
+                }
+              }
+            }
+          }
+
+
+        }
+
+        .partCheer {
+          overflow-y: auto;
+          max-height: 560px;
+
+          li.accordion {
+            list-style: none;
+
+            div.title {
+              display: flex;
+              justify-content: space-between;
+              border: 2px solid #2A6B8A;
+              background-color: azure;
+              margin: 8px;
+              padding: 8px;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+
+            div.panel {
+              display: none;
+            }
+
+            div.panel.open {
+              display: block;
+
+              li {
+                margin: 12px;
+              }
+
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+}
