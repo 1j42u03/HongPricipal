@@ -292,9 +292,6 @@ header .nav_scoutArea .button .scoutArea:hover a,
 header .nav_scoutArea .button .bookArea:hover a {
   color: #2A6B8A;
 }
-.main_scoutArea .theme {
-  padding: 0 40px;
-}
 .main_scoutArea .theme h3.title {
   display: flex;
   justify-content: space-between;
@@ -302,6 +299,7 @@ header .nav_scoutArea .button .bookArea:hover a {
   color: white;
   padding: 4px 8px;
   border-radius: 4px;
+  margin: 8px;
 }
 .main_scoutArea .theme .themeBlock {
   display: grid;
@@ -343,7 +341,7 @@ header .nav_scoutArea .button .bookArea:hover a {
   padding: 0;
 }
 .main_scoutArea .theme .themeBlock .cub ol.part li {
-  margin: 12px;
+  margin: 10px;
   cursor: pointer;
   list-style: none;
 }
@@ -353,10 +351,26 @@ header .nav_scoutArea .button .bookArea:hover a {
   padding: 8px;
 }
 .main_scoutArea .theme .themeBlock .cub ol.part li a:hover {
-  color: #2A6B8A;
-  border-bottom: 0.2px solid #2A6B8A;
+  background-color: #2A6B8A;
+  color: white;
+  border-radius: 4px;
 }
-.main_scoutArea .theme .themeBlock .cub ol.part li.openModal div.modal {
+.main_scoutArea .theme .themeBlock .cub ol.part li.openModal {
+  margin: 10px;
+}
+.main_scoutArea .theme .themeBlock .cub ol.part li.openModal span {
+  padding: 8px;
+}
+.main_scoutArea .theme .themeBlock .cub ol.part li.openModal span:hover {
+  background-color: #2A6B8A;
+  color: white;
+  border-radius: 4px;
+}
+.main_scoutArea .theme .themeBlock .modalAll div.modal {
+  display: none;
+}
+.main_scoutArea .theme .themeBlock .modalAll div.modal div.modalBackground {
+  margin: 0;
   display: none;
   position: fixed;
   top: 0;
@@ -368,7 +382,7 @@ header .nav_scoutArea .button .bookArea:hover a {
   justify-content: center;
   align-items: center;
 }
-.main_scoutArea .theme .themeBlock .cub ol.part li.openModal div.modal div.fable {
+.main_scoutArea .theme .themeBlock .modalAll div.modal div.modalBackground div.fable {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -377,61 +391,67 @@ header .nav_scoutArea .button .bookArea:hover a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.main_scoutArea .theme .themeBlock .cub ol.part li.openModal div.modal div.fable h4.modalTitle {
+.main_scoutArea .theme .themeBlock .modalAll div.modal div.modalBackground div.fable h4.modalTitle {
   background-color: #2A6B8A;
   color: white;
   height: 40px;
   margin: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.main_scoutArea .theme .themeBlock .cub ol.part li.openModal div.modal div.fable h4.modalTitle .close {
+.main_scoutArea .theme .themeBlock .modalAll div.modal div.modalBackground div.fable h4.modalTitle span {
+  margin: 0 6px;
+}
+.main_scoutArea .theme .themeBlock .modalAll div.modal div.modalBackground div.fable h4.modalTitle .closeModal {
   font-size: 24px;
   cursor: pointer;
   line-height: 1;
 }
-.main_scoutArea .theme .themeBlock .cub ol.part li.openModal div.modal div.fable ol.modalContent {
+.main_scoutArea .theme .themeBlock .modalAll div.modal div.modalBackground div.fable ol.modalContent {
   overflow-y: auto;
-  max-height: 500px;
+  max-height: 460px;
   padding: 20px;
+  list-style: none;
+  margin-top: 0;
 }
-.main_scoutArea .theme .themeBlock .cub ol.part li.openModal div.modal div.fable ol.modalContent li {
+.main_scoutArea .theme .themeBlock .modalAll div.modal div.modalBackground div.fable ol.modalContent li {
   border-top: 1px dashed #2A6B8A;
 }
-.main_scoutArea .theme .themeBlock .cub ol.part li.openModal div.modal div.fable ol.modalContent li:first-child {
+.main_scoutArea .theme .themeBlock .modalAll div.modal div.modalBackground div.fable ol.modalContent li:first-child {
   border-top: none;
 }
-.main_scoutArea .theme .themeBlock .cub ol.part li.openModal div.modal div.fable ol.modalContent li p.number {
+.main_scoutArea .theme .themeBlock .modalAll div.modal div.modalBackground div.fable ol.modalContent li p.number {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
 }
-.main_scoutArea .theme .themeBlock .cub ol.part li.openModal div.modal div.fable ol.modalContent li p {
+.main_scoutArea .theme .themeBlock .modalAll div.modal div.modalBackground div.fable ol.modalContent li p {
   margin: 16px;
 }
-.main_scoutArea .theme .themeBlock .cub .partCheer {
-  overflow-y: auto;
-  max-height: 560px;
+.main_scoutArea .theme .themeBlock ol.partCheer {
+  padding: 0 8px;
 }
-.main_scoutArea .theme .themeBlock .cub .partCheer li.accordion {
-  list-style: none;
+.main_scoutArea .theme .themeBlock ol.partCheer .accordion {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-.main_scoutArea .theme .themeBlock .cub .partCheer li.accordion div.title {
+.main_scoutArea .theme .themeBlock ol.partCheer .accordion .title {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #2A6B8A;
+  border: 1px solid #ddd;
+  margin-top: 8px;
+  color: white;
   display: flex;
   justify-content: space-between;
-  border: 2px solid #2A6B8A;
-  background-color: azure;
-  margin: 8px;
-  padding: 8px;
   border-radius: 4px;
-  cursor: pointer;
 }
-.main_scoutArea .theme .themeBlock .cub .partCheer li.accordion div.panel {
+.main_scoutArea .theme .themeBlock ol.partCheer .accordion .panel {
   display: none;
-}
-.main_scoutArea .theme .themeBlock .cub .partCheer li.accordion div.panel.open {
-  display: block;
-}
-.main_scoutArea .theme .themeBlock .cub .partCheer li.accordion div.panel.open li {
-  margin: 12px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
 }/*# sourceMappingURL=style.css.map */
