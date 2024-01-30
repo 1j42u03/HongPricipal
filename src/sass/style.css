@@ -26,6 +26,11 @@ body main .banner .bannerTitle h1,
 body main .banner .bannerTitle h4 {
   margin: 0;
 }
+body main .banner .bannerTitle h1 a,
+body main .banner .bannerTitle h4 a {
+  text-decoration: none;
+  color: black;
+}
 body main .banner img {
   width: 100%;
   height: 100%;
@@ -51,6 +56,7 @@ header {
   top: 0px;
   background-color: #EBF5F6;
   font-size: 0;
+  z-index: 5;
 }
 header nav {
   display: flex;
@@ -109,6 +115,8 @@ footer .up {
 
 body header .nav_aboutMe .button .aboutMe, body header .nav_aboutMe .button .aboutMe:hover,
 body header .nav_aboutMe .button .scoutArea:hover,
+body header .nav_aboutMe .nav_scoutArea .button .index:hover,
+body header .nav_scoutArea .nav_aboutMe .button .index:hover,
 body header .nav_aboutMe .button .bookArea:hover {
   background-color: white;
   border-radius: 4px;
@@ -116,6 +124,8 @@ body header .nav_aboutMe .button .bookArea:hover {
 }
 body header .nav_aboutMe .button .aboutMe a, body header .nav_aboutMe .button .aboutMe:hover a,
 body header .nav_aboutMe .button .scoutArea:hover a,
+body header .nav_aboutMe .nav_scoutArea .button .index:hover a,
+body header .nav_scoutArea .nav_aboutMe .button .index:hover a,
 body header .nav_aboutMe .button .bookArea:hover a {
   color: #2A6B8A;
 }
@@ -226,6 +236,8 @@ body header .nav_aboutMe .nav_bookArea .button .scoutArea:hover,
 body header .nav_bookArea .nav_aboutMe .button .bookArea:hover,
 body header .nav_aboutMe .nav_bookArea .button .bookArea:hover,
 header .nav_bookArea .button .scoutArea:hover,
+header .nav_bookArea .nav_scoutArea .button .index:hover,
+header .nav_scoutArea .nav_bookArea .button .index:hover,
 header .nav_bookArea .button .bookArea:hover {
   background-color: white;
   border-radius: 4px;
@@ -233,6 +245,8 @@ header .nav_bookArea .button .bookArea:hover {
 }
 header .nav_bookArea .button .bookArea a, header .nav_bookArea .button .aboutMe:hover a,
 header .nav_bookArea .button .scoutArea:hover a,
+header .nav_bookArea .nav_scoutArea .button .index:hover a,
+header .nav_scoutArea .nav_bookArea .button .index:hover a,
 header .nav_bookArea .button .bookArea:hover a {
   color: #2A6B8A;
 }
@@ -276,18 +290,24 @@ header .nav_bookArea .button .bookArea:hover a {
   text-indent: 0em;
 }
 
-header .nav_scoutArea .button .scoutArea, header .nav_scoutArea .button .aboutMe:hover, body header .nav_scoutArea .nav_aboutMe .button .aboutMe:hover, body header .nav_aboutMe .nav_scoutArea .button .aboutMe:hover,
+header .nav_scoutArea .button .scoutArea, header .nav_scoutArea .button .index:hover,
+header .nav_scoutArea .button .aboutMe:hover,
+body header .nav_scoutArea .nav_aboutMe .button .aboutMe:hover,
+body header .nav_aboutMe .nav_scoutArea .button .aboutMe:hover,
 body header .nav_scoutArea .nav_aboutMe .button .scoutArea:hover,
 body header .nav_aboutMe .nav_scoutArea .button .scoutArea:hover,
 body header .nav_scoutArea .nav_aboutMe .button .bookArea:hover,
 body header .nav_aboutMe .nav_scoutArea .button .bookArea:hover,
 header .nav_scoutArea .button .scoutArea:hover,
-header .nav_scoutArea .button .bookArea:hover {
+header .nav_scoutArea .button .bookArea:hover,
+body header .nav_scoutArea .nav_aboutMe .button .index:hover,
+body header .nav_aboutMe .nav_scoutArea .button .index:hover {
   background-color: white;
   border-radius: 4px;
   cursor: pointer;
 }
-header .nav_scoutArea .button .scoutArea a, header .nav_scoutArea .button .aboutMe:hover a,
+header .nav_scoutArea .button .scoutArea a, header .nav_scoutArea .button .index:hover a,
+header .nav_scoutArea .button .aboutMe:hover a,
 header .nav_scoutArea .button .scoutArea:hover a,
 header .nav_scoutArea .button .bookArea:hover a {
   color: #2A6B8A;
